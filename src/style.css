@@ -21,10 +21,25 @@ footer {
     justify-content: center;
 }
 
+footer div {
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+footer nav {
+    text-align: center;
+}
+
+
 body header nav ul {
-    padding: 0 10px;
+    padding: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: baseline;
     list-style-type: none;
     margin: 0;
@@ -32,11 +47,36 @@ body header nav ul {
 
 
 .social-media-icon {
-    height: 25px;
-    width: 25px;
+    height: 28px;
+    width: 28px;
 }
 
 #back-to-top-icon {
     height: 25px;
     width: 25px;
 }
+
+#about-me {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 5fr;
+    
+}
+
+#about-me img {
+    order: -1;
+    grid-row: 1 / 3;
+
+}
+
+#about-me p {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+#about-me h2 {
+
+}
+
+/* if the width of the screen is too small, the image will be first followed by the h2 then p. */
+@media width 
