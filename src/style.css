@@ -20,6 +20,14 @@ footer {
     justify-content: center;
 }
 
+body header nav ul {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    list-style-type: none;
+}
+
 
 .social-media-icon {
     height: 20px;
