@@ -8,6 +8,7 @@ body {
 
 header {
     grid-area: header;
+    padding: 0;
 }
 
 .content (
@@ -21,20 +22,21 @@ footer {
 }
 
 body header nav ul {
-    padding: 0;
+    padding: 0 10px;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     list-style-type: none;
+    margin: 0;
 }
 
 
 .social-media-icon {
-    height: 20px;
-    width: 20px;
+    height: 25px;
+    width: 25px;
 }
 
 #back-to-top-icon {
-    height: 20px;
-    width: 20px;
+    height: 25px;
+    width: 25px;
 }
