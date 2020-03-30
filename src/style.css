@@ -127,6 +127,16 @@ header {
 
 }
 
+#resume {
+    /* height: 2480px auto;
+    width: 3508px auto; */
+}
+
+#view-resume-pdf-link {
+    margin: 20px 0;
+    display: block;
+}
+
 [aos="fade"] {
     opacity: 0;
     transition-property: opacity;
