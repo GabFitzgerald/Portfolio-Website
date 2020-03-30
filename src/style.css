@@ -2,8 +2,32 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
 
 @keyframes appear {
-    0% {opacity: 0; transform: translate(0, 10px);} 
-    100% {opacity: 1; transform: none;}
+    from {opacity: 0; transform: translateY(10px);} 
+    to {opacity: 1; transform: none;}
+}
+
+/* Firefox < 16 */
+@-moz-keyframes appear {
+    from {opacity: 0; transform: translateY(10px);} 
+    to {opacity: 1; transform: none;}
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes appear {
+    from {opacity: 0; transform: translateY(10px);} 
+    to {opacity: 1; transform: none;}
+}
+
+/* Internet Explorer */
+@-ms-keyframes appear {
+    from {opacity: 0; transform: translateY(10px);} 
+    to {opacity: 1; transform: none;}
+}
+
+/* Opera < 12.1 */
+@-o-keyframes appear {
+    from {opacity: 0; transform: translateY(10px);} 
+    to {opacity: 1; transform: none;}
 }
 
 
@@ -95,8 +119,22 @@ header {
     grid-area: content;
     text-align: center;
     margin: 0 auto;
-    animation: appear 0.5s ease-in-out forwards;
+    -webkit-animation: appear 0.5s ease-in-out forwards; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: appear 0.5s ease-in-out forwards; /* Firefox < 16 */
+        -ms-animation: appear 0.5s ease-in-out forwards; /* Internet Explorer */
+         -o-animation: appear 0.5s ease-in-out forwards; /* Opera < 12.1 */
+            animation: appear 0.5s ease-in-out forwards;
+
 }
+
+[aos="fade"] {
+    opacity: 0;
+    transition-property: opacity;
+  }
+  
+  [aos="fade"].aos-animate {
+    opacity: 1;
+  }
 
 footer {
     grid-area: footer;
