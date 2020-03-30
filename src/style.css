@@ -1,9 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+
+p {
+    font-family: 'Merriweather Sans', sans-serif;
+    color: white;
+    text-align: left;
+}
+
+.call-to-action p {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: strong;
+    color: white;
+}
+
+h2 {
+    font-family: 'Merriweather', serif;
+    color: white;
+    font-weight: lighter;
+}
+
+h3 {
+    font-family: 'Merriweather', serif;
+    color: white;
+    font-weight: lighter;
+}
+
+li {
+    font-family: 'Merriweather Sans', sans-serif;
+    color: white;
+    text-align: left;
+}
+
+a {
+    font-family: 'Merriweather Sans', sans-serif;
+    text-decoration: none;
+    color:#DEC79B;
+    text-transform: uppercase;
+}
+
+a:hover {
+    color: grey;
+  }
+
+a.email-link {
+    text-transform: lowercase;
+}
+
+
+img {
+    box-shadow: 5px 10px 30px black;
+}
+
+.twitter-tweet {
+    box-shadow: 5px 10px 30px black;
+    height: auto;
+}
+
 body {
     display: grid;
     grid-template-areas: 
     "header"
     "content"
     "footer";
+    background-color: #121212;
 }
 
 header {
@@ -14,8 +77,7 @@ header {
 .content {
     grid-area: content;
     text-align: center;
-    margin-right: 3em;
-    margin-left: 3em;
+    margin: 0 auto;
 }
 
 footer {
@@ -52,6 +114,7 @@ body header nav ul {
 .social-media-icon {
     height: 28px;
     width: 28px;
+    color: #DEC79B;
 }
 
 #back-to-top-icon {
@@ -75,10 +138,11 @@ body header nav ul {
 #about-me p {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    
 }
 
 #about-me h2 {
-
+    
 }
 
 
@@ -108,3 +172,11 @@ blockquote {
     /* start of phone styles */
     
     }
+
+
+@media screen and (prefers-color-scheme: light) {
+    body {
+        background-color: white;
+        color: black;
+    }
+}
