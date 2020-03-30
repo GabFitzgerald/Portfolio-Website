@@ -129,6 +129,8 @@ body header nav ul {
 }
 
 
+
+
 .social-media-icon {
     height: 28px;
     width: 28px;
@@ -173,12 +175,12 @@ body header nav ul {
 }
 
 .content nav {
-    text-align: center;
-  
+    /* text-align: center; */
 }
 
-.content nav a {
-    
+.content nav h3 {
+    display: inline;
+    width: 50%;
 }
 
 .project-nav {
@@ -189,14 +191,14 @@ body header nav ul {
 
 nav h2 {
     display: block;
-    align: center;
+    
 }
 
 .previous-project-nav {
-    text-align: left;
+    float: left;
 }
 .next-project-nav {
-   
+   float: right;
 }
 
 blockquote {
