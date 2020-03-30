@@ -1,10 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
 
+@keyframes appear {
+    0% {opacity: 0; transform: translate(0, 10px);} 
+    100% {opacity: 1; transform: none;}
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
 p {
     font-family: 'Merriweather Sans', sans-serif;
     color: white;
     text-align: left;
+    
 }
 
 .call-to-action p {
@@ -33,6 +45,7 @@ li {
     font-family: 'Merriweather Sans', sans-serif;
     color: white;
     text-align: left;
+    line-height: 2em;
 }
 
 a {
@@ -48,6 +61,10 @@ a:hover {
 
 a.email-link {
     text-transform: lowercase;
+}
+
+code {
+    /* the code tag text looks weird probs fix it */
 }
 
 
@@ -78,6 +95,7 @@ header {
     grid-area: content;
     text-align: center;
     margin: 0 auto;
+    animation: appear 0.5s ease-in-out forwards;
 }
 
 footer {
@@ -161,6 +179,24 @@ body header nav ul {
 
 .content nav a {
     
+}
+
+.project-nav {
+    text-align: unset;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav h2 {
+    display: block;
+    align: center;
+}
+
+.previous-project-nav {
+    text-align: left;
+}
+.next-project-nav {
+   
 }
 
 blockquote {
