@@ -31,6 +31,13 @@
 }
 
 
+header {
+    display: grid;
+    grid-template-areas: "name" "nav-bar";
+    grid-template-columns: 1000px 1fr;
+    
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -51,6 +58,16 @@ h1 {
     font-family: 'Merriweather Sans', sans-serif;
     font-weight: strong;
     color: white;
+    display: inline;
+    grid-area: name;
+}
+
+header nav {
+    grid-area: nav-bar;
+}
+
+header ul {
+    display: inline;
 }
 
 h2 {
