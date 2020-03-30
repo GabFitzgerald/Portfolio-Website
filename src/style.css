@@ -99,6 +99,10 @@ body header nav ul {
     
 }
 
+blockquote {
+    text-align: center;
+}
+
 /* if the width of the screen is too small, the image will be first followed by the h2 then p. */
 @media screen and (max-width: 479px) {
     /* start of phone styles */
