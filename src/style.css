@@ -305,13 +305,23 @@ i.fa-bars {
     margin-right: 15px;
 }
 
+.what-i-learned {
+    background-color: D1D1D1;
+    box-shadow: 5px 10px 30px black;
+    
+}
+
+.what-i-learned li, .what-i-learned h3 {
+    color: black;
+}
+
 i:hover {
     color: grey;
 }
 
 /* don't display full header for mobile */
 /* if the width of the screen is too small, the image will be first followed by the h2 then p. */
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 700px) {
     /* start of phone styles */
     body header nav {
         display: none;
@@ -325,6 +335,9 @@ i:hover {
         display: inline;
     }
 
-    .nav-mobile:touch-action: ;
+    
+
+    /* .nav-mobile:touch-action: ; */
 
     }
+
