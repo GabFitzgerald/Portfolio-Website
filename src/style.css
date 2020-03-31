@@ -128,6 +128,7 @@ body {
 header {
     grid-area: header;
     padding: 0;
+    padding-left: 20px;
 }
 
 .content {
@@ -159,17 +160,17 @@ footer {
 }
 
 footer div {
-    text-align: center;
+    
 }
 
 footer p {
-    text-align: center;
+    
     margin: 0;
     padding: 0;
 }
 
 footer nav {
-    text-align: center;
+    
 }
 
 
@@ -189,6 +190,12 @@ body header nav ul {
     height: 28px;
     width: 28px;
     color: #DEC79B;
+    
+}
+
+div.social-links {
+    /* padding: 0;
+    list-style: none; */
 }
 
 #back-to-top-icon {
@@ -259,11 +266,7 @@ blockquote {
     text-align: center;
 }
 
-/* if the width of the screen is too small, the image will be first followed by the h2 then p. */
-@media screen and (max-width: 479px) {
-    /* start of phone styles */
-    
-    }
+
 
 
 @media screen and (prefers-color-scheme: light) {
@@ -272,3 +275,45 @@ blockquote {
         color: black;
     }
 }
+
+
+.nav-movile {
+    display: none;
+    position: absolute;
+}
+
+i {
+    
+    
+}
+
+.fa {
+    color: #DEC79B;
+    font-size: 200px;
+    height: 40px;
+    width: 40px;
+}
+
+.fa-bars {
+    float: right;
+}
+
+i:hover {
+    color: grey;
+}
+
+/* don't display full header for mobile */
+/* if the width of the screen is too small, the image will be first followed by the h2 then p. */
+@media screen and (max-width: 479px) {
+    /* start of phone styles */
+    body header nav {
+        display: none;
+    }
+    .nav-mobile {
+        display: inline;
+        
+    }
+
+    .nav-mobile:touch-action: ;
+
+    }
