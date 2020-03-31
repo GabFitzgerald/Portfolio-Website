@@ -306,14 +306,42 @@ i.fa-bars {
 }
 
 .what-i-learned {
-    background-color: D1D1D1;
+    background-color: #4C4C4C;
     box-shadow: 5px 10px 30px black;
     
 }
 
-.what-i-learned li, .what-i-learned h3 {
-    color: black;
+figcaption p {
+    text-align: center;
+    color: #636363;
 }
+
+figure {
+    display: flex;
+    /* border: 1px solid black ; */
+    box-shadow: 5px 10px 30px black;
+}
+
+figure img {
+    width: auto;
+}
+
+figcaption {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+}
+
+#terminal-ear-training img {
+    float: right;
+}
+
+
+
+/* .what-i-learned li, .what-i-learned h3 {
+    color: black;
+} */
 
 i:hover {
     color: grey;
