@@ -155,22 +155,26 @@ header {
 
 footer {
     grid-area: footer;
-    display: flex;
+    display: grid;
     justify-content: center;
 }
 
 footer div {
-    
+    display: block;
+    text-align: center;
 }
 
 footer p {
-    
-    margin: 0;
-    padding: 0;
+    display: block;
+    /* margin: 0;
+    padding: 0; */
+    text-align: center;
 }
 
 footer nav {
-    
+    display: block;
+    text-align: center;
+    height: 60px;
 }
 
 
@@ -294,8 +298,11 @@ i {
     width: 40px;
 }
 
-.fa-bars {
+i.fa-bars {
+    display: none;
+    padding: 20px;
     float: right;
+    margin-right: 15px;
 }
 
 i:hover {
@@ -312,6 +319,10 @@ i:hover {
     .nav-mobile {
         display: inline;
         
+    }
+
+    i.fa-bars {
+        display: inline;
     }
 
     .nav-mobile:touch-action: ;
