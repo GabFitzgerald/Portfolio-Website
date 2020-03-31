@@ -332,6 +332,7 @@ figcaption {
     justify-content: center;
     flex-direction: column;
     width: 70%;
+    padding: 10px;
 }
 
 #terminal-ear-training img {
