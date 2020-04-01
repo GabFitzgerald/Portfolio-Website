@@ -150,8 +150,10 @@ header {
 }
 
 #resume {
-    /* height: 2480px auto;
-    width: 3508px auto; */
+    /* width: 90%; */
+    height: auto;
+    /* display: inline;
+    text-align: center; */
 }
 
 #view-resume-pdf-link {
@@ -163,6 +165,9 @@ footer {
     grid-area: footer;
     display: grid;
     justify-content: center;
+    /* position: fixed;
+    bottom: 0; */
+    /* sit on the bottom at the page */
 }
 
 footer div {
@@ -325,6 +330,10 @@ figcaption p {
     color: #636363;
 }
 
+a i {
+    padding: 4px;
+}
+
 figure {
     display: flex;
     /* border: 1px solid black ; */
@@ -332,6 +341,9 @@ figure {
     height: auto;
     width: 90vw;
     text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
 }
 
 figure img {
