@@ -364,15 +364,16 @@ figcaption {
 .menu-wrap .hamburger {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     z-index: 1;
     width: 60px;
     height: 60px;
     padding: 1rem;
-    background: white;
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
 }
 
 /* hamburger line */
