@@ -210,23 +210,47 @@ div.social-links {
 }
 
 #about-me {
-    display: grid;
-    grid-template-columns: 320px 1fr;
-    grid-template-rows: 1fr 3fr;
-    width: 730px;
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: 50% 1fr;
+    grid-template-rows: 1fr 5fr;
+    grid-gap: 30px; */
+    width: 80vw;
     margin: 30px auto;
 }
 
-#about-me img {
-    order: -1;
-    grid-row: 1 / 3;
+#about-me figure {
+     box-shadow: none;
 }
 
+#about-me figcaption {
+    padding: 20px;
+    width: 70vw;
+}
+
+#about-me figcaption p {
+    text-align: left;
+    padding: 10px;
+}
+
+
+
+/* realign about me section for desktop */
+@media screen and (min-width: 700px) {
+
+}
+
+ #about-me img {
+    max-width: 300px;
+    height: auto;
+}
+
+/*
 #about-me p {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     height: fit-content;
-}
+} */
 
 .content h2 {
     text-align: center;
