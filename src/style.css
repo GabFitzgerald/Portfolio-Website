@@ -110,6 +110,7 @@ code {
 
 img {
     box-shadow: 5px 10px 30px black;
+    z-index: -1;
 }
 
 .twitter-tweet {
@@ -142,7 +143,8 @@ header {
         -ms-animation: appear 0.5s ease-in-out forwards; /* Internet Explorer */
          -o-animation: appear 0.5s ease-in-out forwards; /* Opera < 12.1 */
             animation: appear 0.5s ease-in-out forwards;
-
+    position: relative;
+    z-index: -1;
 }
 
 #resume {
@@ -184,7 +186,6 @@ body header nav ul {
     padding-top: 30px;
     display: flex;
     justify-content: space-around;
-    
     list-style-type: none;
     margin: 0;
 }
@@ -225,11 +226,6 @@ div.social-links {
     height: fit-content;
 }
 
-#about-me h2 {
-    
-}
-
-
 .content h2 {
     text-align: center;
 }
@@ -269,9 +265,7 @@ blockquote {
     text-align: center;
 }
 
-
-
-
+/* sprinkle */
 @media screen and (prefers-color-scheme: light) {
     body {
         background-color: white;
@@ -279,16 +273,6 @@ blockquote {
     }
 }
 
-
-.nav-movile {
-    display: none;
-    position: absolute;
-}
-
-i {
-    
-    
-}
 
 .what-i-learned {
     background-color: #4C4C4C;
@@ -436,8 +420,8 @@ figcaption {
 .menu-wrap .menu > div {
     background: rgba(0, 0, 0, 0.8);
     border-radius: 50%;
-    width: 200vw;
-    height: 200vh;
+    width: 400vw;
+    height: 190vh;
     display: flex;
     flex: none;
     align-items: center;
@@ -453,6 +437,8 @@ figcaption {
     max-width: 100vh;
     opacity: 0;
     transition: opacity 0.7s ease;
+    position: relative;
+    z-index: 2;
 }
 
 .menu-wrap .menu > div > div > ul > li {
@@ -460,6 +446,7 @@ figcaption {
     color: #fff;
     font-size: 1.5rem;
     padding: 1rem;
+    z-index: 3;
 }
 
 .menu-wrap .menu > div > div > ul > li {
