@@ -125,7 +125,6 @@ body {
     "content"
     "footer";
     background-color: #121212;
-    
 }
 
 header {
@@ -145,6 +144,7 @@ header {
             animation: appear 0.5s ease-in-out forwards;
     position: relative;
     z-index: -1;
+    width: 80%;
 }
 
 #resume {
