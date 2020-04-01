@@ -233,6 +233,14 @@ div.social-links {
     padding: 10px;
 }
 
+article {
+    width: 90vw;
+}
+
+article img {
+    max-height: 400px;
+    width: auto;
+}
 
 
 /* realign about me section for desktop */
@@ -299,10 +307,17 @@ blockquote {
     }
 }
 
+.what-i-learned-conatiner {
+    text-align: center;
+}
 
-.what-i-learned {
+section.what-i-learned {
     background-color: #4C4C4C;
-    box-shadow: 5px 10px 30px black;   
+    box-shadow: 5px 10px 30px black;
+    width: fit-content;
+    display: inline-block;
+    margin: 10px;
+    padding-right: 20px;
 }
 
 figcaption p {
