@@ -179,8 +179,6 @@ footer nav {
     height: 60px;
 }
 
-
-
 body header nav ul {
     padding: 0;
     padding-top: 30px;
@@ -190,7 +188,6 @@ body header nav ul {
     list-style-type: none;
     margin: 0;
 }
-
 
 .social-media-icon {
     height: 28px;
@@ -293,24 +290,9 @@ i {
     
 }
 
-/* .fa {
-    color: #DEC79B;
-    font-size: 200px;
-    height: 40px;
-    width: 40px;
-}
-
-i.fa-bars {
-    display: none;
-    padding: 20px;
-    float: right;
-    margin-right: 15px;
-} */
-
 .what-i-learned {
     background-color: #4C4C4C;
-    box-shadow: 5px 10px 30px black;
-    
+    box-shadow: 5px 10px 30px black;   
 }
 
 figcaption p {
@@ -339,8 +321,6 @@ figcaption {
 #terminal-ear-training img {
     float: right;
 }
-
-
 
 /* styling and animating the mobile menu */
 .menu-wrap {
@@ -437,7 +417,6 @@ figcaption {
     transition: opacity 0.4s ease;
 }
 
-
 .menu-wrap .menu {
     position: fixed;
     top: 0;
@@ -486,8 +465,6 @@ figcaption {
 }
 
 
-
-
 /* .what-i-learned li, .what-i-learned h3 {
     color: black;
 } */
@@ -512,9 +489,6 @@ i:hover {
         display: inline;
     }
 
-    
-
     /* .nav-mobile:touch-action: ; */
 
     }
-
