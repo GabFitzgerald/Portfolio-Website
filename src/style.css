@@ -309,23 +309,22 @@ figcaption {
 /* styling and animating the mobile menu */
 .menu-wrap {
     position: none;
-    /* position: fixed; */
     top: 0;
     right: 0;
     z-index: 1:
 }
 
 .menu-wrap .toggler {
-    position: absolute;
+    position: none;
     top: 0;
     right: 0;
     z-index: 2;
     cursor: pointer;
-    width: 70px;
-    height: 70px;
+    width: 30px;
+    height: 30px;
     opacity: 0;
     /* padding: 2em; */
-    margin: 2em;
+    margin: 1.5rem;
     z-index: 5;
 }
 
@@ -334,12 +333,13 @@ figcaption {
     top: 0;
     right: 0;
     z-index: 1;
-    width: 60px;
-    height: 60px;
-    padding: 2rem;
+    width: 30px;
+    height: 30px;
+    padding: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 5;
 }
 
 /* hamburger line */
@@ -360,7 +360,7 @@ figcaption {
    content: '';
    position: absolute;
    z-index: 1;
-   top: -15px;
+   top: -10px;
    width: 100%;
    height: 4px;
    background: inherit;
@@ -368,7 +368,7 @@ figcaption {
 
 /* moves line down */
 .menu-wrap .hamburger > div:after {
-    top: 15px;
+    top: 10px;
 }
 
 /* toggler animate */
@@ -418,10 +418,10 @@ figcaption {
 }
 
 .menu-wrap .menu > div {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.9);
     border-radius: 50%;
-    width: 400vw;
-    height: 190vh;
+    width: 200vw;
+    height: 200vh;
     display: flex;
     flex: none;
     align-items: center;
@@ -441,6 +441,10 @@ figcaption {
     z-index: 2;
 }
 
+.menu-wrap .menu > div > div > ul {
+    padding: 0;
+}
+
 .menu-wrap .menu > div > div > ul > li {
     list-style: none;
     color: #fff;
@@ -454,7 +458,7 @@ figcaption {
     text-decoration: none;
     transition: color 0.4s ease;
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 
@@ -478,4 +482,7 @@ i:hover {
         position: fixed;
     }
 
+    .menu-wrap .toggler {
+        position: fixed;
     }
+}
