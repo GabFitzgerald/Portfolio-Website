@@ -110,7 +110,9 @@ code {
 
 img {
     box-shadow: 5px 10px 30px black;
-    z-index: -1;
+    /* max-width: 50%; */
+    width: 100%;
+    height: auto;
 }
 
 .twitter-tweet {
@@ -144,7 +146,7 @@ header {
             animation: appear 0.5s ease-in-out forwards;
     position: relative;
     z-index: -1;
-    width: 80%;
+    max-width: 100%;
 }
 
 #resume {
@@ -288,10 +290,13 @@ figure {
     display: flex;
     /* border: 1px solid black ; */
     box-shadow: 5px 10px 30px black;
+    height: auto;
+    width: 80%;
 }
 
 figure img {
-    width: auto;
+    /* width: auto; */
+    max-width: 50%;
 }
 
 figcaption {
@@ -308,14 +313,14 @@ figcaption {
 
 /* styling and animating the mobile menu */
 .menu-wrap {
-    position: none;
+    position: fixed;
     top: 0;
     right: 0;
     z-index: 1:
 }
 
 .menu-wrap .toggler {
-    position: none;
+    position: fixed;
     top: 0;
     right: 0;
     z-index: 2;
@@ -329,6 +334,7 @@ figcaption {
 }
 
 .menu-wrap .hamburger {
+    visibility: hidden;
     position: none;
     top: 0;
     right: 0;
@@ -479,10 +485,13 @@ i:hover {
     }
     
     .menu-wrap {
-        position: fixed;
+        visibility: visible;
     }
 
     .menu-wrap .toggler {
-        position: fixed;
+        visibility: visible;
     }
+
+    .menu-wrap .hamburger {
+        visibility: visible;
 }
