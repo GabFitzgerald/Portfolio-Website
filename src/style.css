@@ -97,7 +97,7 @@ a {
 
 a:hover {
     color: grey;
-  }
+}
 
 a.email-link {
     text-transform: lowercase;
@@ -312,7 +312,7 @@ blockquote {
 }
 
 section.what-i-learned {
-    background-color: #4C4C4C;
+    background-color: #383838;
     box-shadow: 5px 10px 30px black;
     width: fit-content;
     display: inline-block;
@@ -330,13 +330,15 @@ figure {
     /* border: 1px solid black ; */
     box-shadow: 5px 10px 30px black;
     height: auto;
-    width: 90%;
+    width: 90vw;
     text-align: center;
 }
 
 figure img {
     /* width: auto; */
     max-width: 50%;
+    height: auto;
+    width: auto;
 }
 
 figcaption {
@@ -398,6 +400,10 @@ figcaption {
     align-items: center;
     justify-content: center;
     transition: all 0.4s ease;
+}
+
+.menu-wrap .hamburger > div:hover {
+    background-color: grey;
 }
 
 /* style for top and bottom lines */
