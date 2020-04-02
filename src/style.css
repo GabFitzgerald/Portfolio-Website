@@ -145,8 +145,8 @@ header {
          -o-animation: appear 0.5s ease-in-out forwards; /* Opera < 12.1 */
             animation: appear 0.5s ease-in-out forwards;
     position: relative;
-    z-index: -1;
     max-width: 100%;
+    /* z-index: -1; */
 }
 
 #resume {
@@ -370,7 +370,7 @@ figcaption {
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 1:
+    z-index: 1;
 }
 
 .menu-wrap .toggler {
@@ -443,7 +443,7 @@ figcaption {
 /* turns lines into x */
 .menu-wrap .toggler:checked + .hamburger > div:before,
 .menu-wrap .toggler:checked + .hamburger > div:after {
-    top:0;
+    top: 0;
     transform: rotate(90deg);
 }
 
@@ -456,6 +456,10 @@ figcaption {
 .menu-wrap .toggler:checked ~ .menu {
     visibility: visible;
 }
+
+/* .menu-wrap .toggler:checked ~ article {
+    visibility: hidden;
+} */
 
 .menu-wrap .toggler:checked ~ .menu > div {
     transform: scale(1);
