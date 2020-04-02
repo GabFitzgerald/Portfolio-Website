@@ -57,11 +57,29 @@ This is really the heart of the website as the main showcase of my previous work
 
 - **Portfolio details**: descriptions (>50words), images, embedded tweets, what I learned, call to action
 
+![blog post screenshot](/docs/blog_post_screenshot.png)
+
+Each post is to give more details about each of the project I've worked on. The text is styled with a maximum of 50 words per paragraph so that it looks like I have something to say, but is still readable. They include images, embedded tweeted and lists to keep the post visually interesting, and the viewer more likely to read on. 
+
+![what i learned screenshot](/docs/what_i_learned_screenshot.png)
+
+I've included a "What I Learned" section to each post to show that as a new developer I'm doing my best to pick up new skills and also to demonstrate soft skills such as growth mindset and positive attitude.
+
+![call to action screenshot](/docs/call_to_action_screenshot.png)
+
+Every post finishes with a call to action for once the viewer has finished reading the post. They can email me; clicking my email will open a prefilled email addressed to me. Or they can find more details in my github which is also linked.
 
 - **Portfolio details nav**: next/previous/back-to-all projects
 
+![blogs posts navigation](/docs/project_details_nav.png)
 
-- Resume: image, link to pdf
+This was added at the bottom of each project details page to be the next logical step for the viewer. If they have finished reading the details of my project, and are not called to action, then they can look at my next/previous project, or go back to the blog roll of projects.
+
+- **Resume**: image, link to pdf
+
+If the viewer is a potential employer and is interested in looking at my resume, they can also do that from the website itself, or download a pdf to save for later.
+
+![resume page screenshot](/docs/resume_screenshot.png)
 
 
 ### Mobile Responsiveness
