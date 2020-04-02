@@ -41,7 +41,7 @@ html {
 
 p {
     font-family: 'Merriweather Sans', sans-serif;
-    color: white;
+    color: black;
     text-align: left;  
 }
 
@@ -52,7 +52,7 @@ p {
 h1 {
     font-family: 'Merriweather Sans', sans-serif;
     font-weight: strong;
-    color: white;
+    color: black;
     display: inline-block;
     grid-column: 1 / 2;
     width: fit-content;
@@ -65,19 +65,19 @@ header nav {
 
 h2 {
     font-family: 'Merriweather', serif;
-    color: white;
+    color: black;
     font-weight: lighter;
 }
 
 h3 {
     font-family: 'Merriweather', serif;
-    color: white;
+    color: black;
     font-weight: lighter;
 }
 
 li {
     font-family: 'Merriweather Sans', sans-serif;
-    color: white;
+    color: black;
     text-align: left;
     line-height: 2em;
 }
@@ -116,7 +116,7 @@ body {
     "header"
     "content"
     "footer";
-    background-color: #121212;
+    background-color: white;
 }
 
 header {
@@ -351,7 +351,7 @@ figcaption {
     position: relative;
     width: 100%;
     height: 4px;
-    background-color: #DEC79B;
+    background-color: black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -459,7 +459,7 @@ figcaption {
 
 .menu-wrap .menu > div > div > ul > li {
     list-style: none;
-    color: #fff;
+    color: black;
     font-size: 1.5rem;
     padding: 1rem;
     z-index: 3;
