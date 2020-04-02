@@ -19,13 +19,9 @@ With a strong focus on showcasing my work, the blog roll is the first thing on t
 
 ![site map](../docs/site_map.png)
 
+### Wireframes
 
-
-- detail how the user navigates through the website
-
-- link wireframes and include some screenshots
-
-
+![wireframes](../docs/wireframes.png)
 
 ### Functionality / features
 
