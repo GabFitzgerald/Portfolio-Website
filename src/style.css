@@ -40,7 +40,7 @@ html {
 }
 
 p {
-    font-family: 'Merriweather Sans', sans-serif;
+    font-family: "Comic Sans MS", cursive, sans-serif;
     color: white;
     text-align: left;  
 }
@@ -50,7 +50,7 @@ p {
 }
 
 h1 {
-    font-family: 'Merriweather Sans', sans-serif;
+    font-family: "Comic Sans MS", cursive, sans-serif;
     font-weight: strong;
     color: white;
     display: inline-block;
@@ -64,26 +64,26 @@ header nav {
 }
 
 h2 {
-    font-family: 'Merriweather', serif;
+    font-family: "Comic Sans MS", cursive, sans-serif;
     color: white;
     font-weight: lighter;
 }
 
 h3 {
-    font-family: 'Merriweather', serif;
+    font-family: "Comic Sans MS", cursive, sans-serif;
     color: white;
     font-weight: lighter;
 }
 
 li {
-    font-family: 'Merriweather Sans', sans-serif;
+    font-family: "Comic Sans MS", cursive, sans-serif;
     color: white;
     text-align: left;
     line-height: 2em;
 }
 
 a {
-    font-family: 'Merriweather Sans', sans-serif;
+    font-family: "Comic Sans MS", cursive, sans-serif;
     text-decoration: none;
     color:#DEC79B;
     text-transform: uppercase;
@@ -103,7 +103,6 @@ img {
     /* max-width: 50%; */
     width: 100%;
     height: auto;
-    border-radius: 10%;
 }
 
 .twitter-tweet {
@@ -271,7 +270,7 @@ section.what-i-learned {
     display: inline-block;
     margin: 10px;
     padding-right: 20px;
-    border-radius: 20%;
+    bo
 }
 
 figcaption p {
@@ -292,7 +291,6 @@ figure {
     padding: 0;
     margin: 0;
     margin-bottom: 20px;
-    border-radius: 5%;
 }
 
 figure img {
