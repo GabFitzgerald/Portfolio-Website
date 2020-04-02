@@ -17,11 +17,11 @@ This portfolio is targeted at potential employers, clients or anyone looking to 
 
 With a strong focus on showcasing my work, the blog roll is the first thing on the home page. Each project summary links out to a project details page. Each project details page links to the next, and previous one, and back to the blog roll. The about me section is found at the bottom of the blog roll, but can be accessed by the header on all pages. Same with the resume page, which can be access by the header. Social links to twitter, linkedin and github are present in the header and footer of every page.
 
-![site map](../docs/site_map.png)
+![site map](/docs/site_map.png)
 
 ### Wireframes
 
-![wireframes](../docs/wireframes.png)
+![wireframes](/docs/wireframes.png)
 
 ### Functionality / features
 
