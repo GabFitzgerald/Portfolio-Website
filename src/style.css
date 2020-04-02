@@ -97,7 +97,7 @@ a {
 
 a:hover {
     color: grey;
-  }
+}
 
 a.email-link {
     text-transform: lowercase;
@@ -110,7 +110,9 @@ code {
 
 img {
     box-shadow: 5px 10px 30px black;
-    z-index: -1;
+    /* max-width: 50%; */
+    width: 100%;
+    height: auto;
 }
 
 .twitter-tweet {
@@ -125,7 +127,6 @@ body {
     "content"
     "footer";
     background-color: #121212;
-    
 }
 
 header {
@@ -144,12 +145,15 @@ header {
          -o-animation: appear 0.5s ease-in-out forwards; /* Opera < 12.1 */
             animation: appear 0.5s ease-in-out forwards;
     position: relative;
-    z-index: -1;
+    max-width: 100%;
+    /* z-index: -1; */
 }
 
 #resume {
-    /* height: 2480px auto;
-    width: 3508px auto; */
+    /* width: 90%; */
+    height: auto;
+    /* display: inline;
+    text-align: center; */
 }
 
 #view-resume-pdf-link {
@@ -161,6 +165,9 @@ footer {
     grid-area: footer;
     display: grid;
     justify-content: center;
+    /* position: fixed;
+    bottom: 0; */
+    /* sit on the bottom at the page */
 }
 
 footer div {
@@ -208,23 +215,55 @@ div.social-links {
 }
 
 #about-me {
-    display: grid;
-    grid-template-columns: 320px 1fr;
-    grid-template-rows: 1fr 3fr;
-    width: 730px;
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: 50% 1fr;
+    grid-template-rows: 1fr 5fr;
+    grid-gap: 30px; */
+    width: 80vw;
     margin: 30px auto;
 }
 
-#about-me img {
-    order: -1;
-    grid-row: 1 / 3;
+#about-me figure {
+     box-shadow: none;
 }
 
+#about-me figcaption {
+    padding: 20px;
+    width: 70vw;
+}
+
+#about-me figcaption p {
+    text-align: left;
+    padding: 10px;
+}
+
+article {
+    width: 90vw;
+}
+
+article img {
+    max-height: 400px;
+    width: auto;
+}
+
+
+/* realign about me section for desktop */
+@media screen and (min-width: 700px) {
+
+}
+
+ #about-me img {
+    max-width: 300px;
+    height: auto;
+}
+
+/*
 #about-me p {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     height: fit-content;
-}
+} */
 
 .content h2 {
     text-align: center;
@@ -273,10 +312,17 @@ blockquote {
     }
 }
 
+.what-i-learned-conatiner {
+    text-align: center;
+}
 
-.what-i-learned {
-    background-color: #4C4C4C;
-    box-shadow: 5px 10px 30px black;   
+section.what-i-learned {
+    background-color: #383838;
+    box-shadow: 5px 10px 30px black;
+    width: fit-content;
+    display: inline-block;
+    margin: 10px;
+    padding-right: 20px;
 }
 
 figcaption p {
@@ -284,13 +330,26 @@ figcaption p {
     color: #636363;
 }
 
+a i {
+    padding: 4px;
+}
+
 figure {
     display: flex;
     /* border: 1px solid black ; */
     box-shadow: 5px 10px 30px black;
+    height: auto;
+    width: 90vw;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
 }
 
 figure img {
+    /* width: auto; */
+    max-width: 50%;
+    height: auto;
     width: auto;
 }
 
@@ -308,14 +367,14 @@ figcaption {
 
 /* styling and animating the mobile menu */
 .menu-wrap {
-    position: none;
+    position: fixed;
     top: 0;
     right: 0;
-    z-index: 1:
+    z-index: 1;
 }
 
 .menu-wrap .toggler {
-    position: none;
+    position: fixed;
     top: 0;
     right: 0;
     z-index: 2;
@@ -329,6 +388,7 @@ figcaption {
 }
 
 .menu-wrap .hamburger {
+    visibility: hidden;
     position: none;
     top: 0;
     right: 0;
@@ -352,6 +412,10 @@ figcaption {
     align-items: center;
     justify-content: center;
     transition: all 0.4s ease;
+}
+
+.menu-wrap .hamburger > div:hover {
+    background-color: grey;
 }
 
 /* style for top and bottom lines */
@@ -379,7 +443,7 @@ figcaption {
 /* turns lines into x */
 .menu-wrap .toggler:checked + .hamburger > div:before,
 .menu-wrap .toggler:checked + .hamburger > div:after {
-    top:0;
+    top: 0;
     transform: rotate(90deg);
 }
 
@@ -392,6 +456,10 @@ figcaption {
 .menu-wrap .toggler:checked ~ .menu {
     visibility: visible;
 }
+
+/* .menu-wrap .toggler:checked ~ article {
+    visibility: hidden;
+} */
 
 .menu-wrap .toggler:checked ~ .menu > div {
     transform: scale(1);
@@ -479,10 +547,47 @@ i:hover {
     }
     
     .menu-wrap {
-        position: fixed;
+        visibility: visible;
     }
 
     .menu-wrap .toggler {
-        position: fixed;
+        visibility: visible;
     }
+
+    .menu-wrap .hamburger {
+        visibility: visible;
+    }
+
+    figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 10px;
+        min-width: 40%;
+        width: 90vw;
+    }
+
+    figure img {
+
+    }
+    figure figcaption {
+        padding: 0;
+    }
+
+    figure figcaption h2 {
+        padding: 0;
+        margin: 0;
+    }
+
+    figure figcaption p {
+        padding: 2px;
+        margin: 2px;
+        /* width: 50%; */
+    }
+}
+
+#portfolio-blog-roll {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
