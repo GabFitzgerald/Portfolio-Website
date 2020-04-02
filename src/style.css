@@ -30,24 +30,19 @@
     to {opacity: 1; transform: none;}
 }
 
-
 header {
     display: grid;
-    /* grid-template-areas: "name" "nav-bar"; */
-    grid-template-columns: 230px 1fr;
-    
+    grid-template-columns: 230px 1fr;   
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-
 p {
     font-family: 'Merriweather Sans', sans-serif;
     color: white;
-    text-align: left;
-    
+    text-align: left;  
 }
 
 .call-to-action p {
@@ -103,11 +98,6 @@ a.email-link {
     text-transform: lowercase;
 }
 
-code {
-    /* the code tag text looks weird probs fix it */
-}
-
-
 img {
     box-shadow: 5px 10px 30px black;
     /* max-width: 50%; */
@@ -150,10 +140,7 @@ header {
 }
 
 #resume {
-    /* width: 90%; */
     height: auto;
-    /* display: inline;
-    text-align: center; */
 }
 
 #view-resume-pdf-link {
@@ -165,9 +152,6 @@ footer {
     grid-area: footer;
     display: grid;
     justify-content: center;
-    /* position: fixed;
-    bottom: 0; */
-    /* sit on the bottom at the page */
 }
 
 footer div {
@@ -177,8 +161,6 @@ footer div {
 
 footer p {
     display: block;
-    /* margin: 0;
-    padding: 0; */
     text-align: center;
 }
 
@@ -200,13 +182,7 @@ body header nav ul {
 .social-media-icon {
     height: 28px;
     width: 28px;
-    color: #DEC79B;
-    
-}
-
-div.social-links {
-    /* padding: 0;
-    list-style: none; */
+    color: #DEC79B; 
 }
 
 #back-to-top-icon {
@@ -217,9 +193,6 @@ div.social-links {
 #about-me {
     display: flex;
     flex-wrap: wrap;
-    /* grid-template-columns: 50% 1fr;
-    grid-template-rows: 1fr 5fr;
-    grid-gap: 30px; */
     width: 80vw;
     margin: 30px auto;
 }
@@ -247,23 +220,10 @@ article img {
     width: auto;
 }
 
-
-/* realign about me section for desktop */
-@media screen and (min-width: 700px) {
-
-}
-
  #about-me img {
     max-width: 300px;
     height: auto;
 }
-
-/*
-#about-me p {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    height: fit-content;
-} */
 
 .content h2 {
     text-align: center;
@@ -271,10 +231,6 @@ article img {
 
 .content h3 {
     text-align: center;
-}
-
-.content nav {
-    /* text-align: center; */
 }
 
 .content nav h3 {
@@ -289,8 +245,7 @@ article img {
 }
 
 nav h2 {
-    display: block;
-    
+    display: block; 
 }
 
 .previous-project-nav {
@@ -302,14 +257,6 @@ nav h2 {
 
 blockquote {
     text-align: center;
-}
-
-/* sprinkle */
-@media screen and (prefers-color-scheme: light) {
-    body {
-        background-color: white;
-        color: black;
-    }
 }
 
 .what-i-learned-conatiner {
@@ -336,7 +283,6 @@ a i {
 
 figure {
     display: flex;
-    /* border: 1px solid black ; */
     box-shadow: 5px 10px 30px black;
     height: auto;
     width: 90vw;
@@ -347,7 +293,6 @@ figure {
 }
 
 figure img {
-    /* width: auto; */
     max-width: 50%;
     height: auto;
     width: auto;
@@ -382,7 +327,6 @@ figcaption {
     width: 30px;
     height: 30px;
     opacity: 0;
-    /* padding: 2em; */
     margin: 1.5rem;
     z-index: 5;
 }
@@ -529,23 +473,24 @@ figcaption {
     font-size: 40px;
 }
 
-
-/* .what-i-learned li, .what-i-learned h3 {
-    color: black;
-} */
-
 i:hover {
     color: grey;
 }
 
-/* don't display full header for mobile */
-/* if the width of the screen is too small, the image will be first followed by the h2 then p. */
+#portfolio-blog-roll {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* mobile responsiveness */
 @media screen and (max-width: 700px) {
-    /* start of phone styles */
+    /* don't display full header */
     body header nav {
         display: none;
     }
     
+    /* make hamburger visible */
     .menu-wrap {
         visibility: visible;
     }
@@ -567,9 +512,6 @@ i:hover {
         width: 90vw;
     }
 
-    figure img {
-
-    }
     figure figcaption {
         padding: 0;
     }
@@ -582,12 +524,14 @@ i:hover {
     figure figcaption p {
         padding: 2px;
         margin: 2px;
-        /* width: 50%; */
     }
 }
 
-#portfolio-blog-roll {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+
+/* sprinkle - dark/light mode */
+/* @media screen and (prefers-color-scheme: light) {
+    body {
+        background-color: white;
+        color: black;
+    }
+} */
