@@ -29,8 +29,18 @@ With a strong focus on showcasing my work, the blog roll is the first thing on t
 ![wireframes](/docs/wireframes.png)
 
 ### Components
+
 - Header-nav: my name, portfolio, about, resume, social links
+
+The header is present on every page for easy and consistent navigation throughout the website. My name is in the top left corner of both the desktop and mobile versions so that it is present and obvious for the viewer. It also include socials links to encourage the viewer to connect with me from the start of the page. 
+
+![header screenshots](/docs/header_screenshots.png)
+
 - Footer: social links, back-to-top-nav, copyright (my name again)
+
+![footer screenshot](/docs/footer_screenshot.png)
+The chevron navigates back to the top, so the user can access the header again quickly. Social links are there to again encourage the user to connect with me. The copyright serves a few purposes. It attributes the work to me, explains the languages used to build the site and reminds the viewer of my name again.
+
 - About me: photo, description
 - Portfolio blog roll: thumbnail photo, date of project, title, tech stack
 - Portfolio details: descriptions (>50words), images, embedded tweets, what I learned, call to action
