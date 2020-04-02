@@ -19,29 +19,32 @@ With a strong focus on showcasing my work, the blog roll is the first thing on t
 
 ![site map](/docs/site_map.png)
 
+### Navigation
+
+![navigation from home screen](/docs/navigation_from_home_screen.png)
+![navigation from blog post](/docs/navigation_from_blog_posts.png)
+
 ### Wireframes
 
 ![wireframes](/docs/wireframes.png)
 
-### Functionality / features
+### Components
+- Header-nav: my name, portfolio, about, resume, social links
+- Footer: social links, back-to-top-nav, copyright (my name again)
+- About me: photo, description
+- Portfolio blog roll: thumbnail photo, date of project, title, tech stack
+- Portfolio details: descriptions (>50words), images, embedded tweets, what I learned, call to action
+- Portfolio details nav: next/previous/back-to-all projects
+- Resume: image, link to pdf
+
+
+### Functionality / features / comp
 
 
 
 - mobile responsive
 - navigation
 - call to action section: email/github
-
-
-
-
-
-
-### Screenshots
-
-
-
-
-
 
 ### Tech Stack
 The website was build with HTML and CSS.
