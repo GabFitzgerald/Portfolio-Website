@@ -259,14 +259,6 @@ blockquote {
     text-align: center;
 }
 
-/* sprinkle - dark/light mode */
-/* @media screen and (prefers-color-scheme: light) {
-    body {
-        background-color: white;
-        color: black;
-    }
-} */
-
 .what-i-learned-conatiner {
     text-align: center;
 }
@@ -534,3 +526,12 @@ i:hover {
         margin: 2px;
     }
 }
+
+
+/* sprinkle - dark/light mode */
+/* @media screen and (prefers-color-scheme: light) {
+    body {
+        background-color: white;
+        color: black;
+    }
+} */
