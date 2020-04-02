@@ -30,31 +30,45 @@ With a strong focus on showcasing my work, the blog roll is the first thing on t
 
 ### Components
 
-- Header-nav: my name, portfolio, about, resume, social links
+- **Header-nav**: my name, portfolio, about, resume, social links
 
 The header is present on every page for easy and consistent navigation throughout the website. My name is in the top left corner of both the desktop and mobile versions so that it is present and obvious for the viewer. It also include socials links to encourage the viewer to connect with me from the start of the page. 
 
 ![header screenshots](/docs/header_screenshots.png)
 
-- Footer: social links, back-to-top-nav, copyright (my name again)
+- **Footer**: social links, back-to-top-nav, copyright (my name again)
 
 ![footer screenshot](/docs/footer_screenshot.png)
+
 The chevron navigates back to the top, so the user can access the header again quickly. Social links are there to again encourage the user to connect with me. The copyright serves a few purposes. It attributes the work to me, explains the languages used to build the site and reminds the viewer of my name again.
 
-- About me: photo, description
-- Portfolio blog roll: thumbnail photo, date of project, title, tech stack
-- Portfolio details: descriptions (>50words), images, embedded tweets, what I learned, call to action
-- Portfolio details nav: next/previous/back-to-all projects
+- **About me**: photo, description
+
+![about me section screenshots](/docs/about_me_screenshot.png)
+
+This section is located at the bottom of the portfolio blog roll. I put it there to let the work speak first, then allow to viewer to learn a bit about me if they are interested. I've included a photo and a description to show some personality, and show a little bit of who I am.
+
+
+- **Portfolio blog roll**: thumbnail photo, date of project, title, tech stack
+
+This is really the heart of the website as the main showcase of my previous work. I've styled each post on a card with some box shadow to make them stand out. I've added a thumbnail image for some interest on the page. Then added a caption including the date of the work (to show my progress/growth), the title of the project and a short description including the technology used. There is also a "view project" link which links to the details page for each project. This allows the viewer to browse my works and get a good idea of what I know, (e.g. ruby, html, css, likes music and has a BSc) then get more detail about a project if they are interested.
+
+![portfolio blog roll screen shot](/docs/portfolio_blog_roll_screenshot.png)
+
+- **Portfolio details**: descriptions (>50words), images, embedded tweets, what I learned, call to action
+
+
+- **Portfolio details nav**: next/previous/back-to-all projects
+
+
 - Resume: image, link to pdf
 
 
-### Functionality / features / comp
+### Mobile Responsiveness
 
+![mobile responsiveness of home page](/docs/mobile_responsiveness_home_page.png)
 
-
-- mobile responsive
-- navigation
-- call to action section: email/github
+![mobile responsiveness of details pages](/docs/mobile_responsiveness_blog_post.png)
 
 ### Tech Stack
 The website was build with HTML and CSS.
